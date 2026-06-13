@@ -1,0 +1,29 @@
+{
+  "name": "reviewr-aii",
+  "version": "1.0.0",
+  "description": "GitHub App that reviews pull requests with Groq.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node init && tsx watch src/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@octokit/webhooks": "^13.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.21.2",
+    "groq-sdk": "^1.2.1",
+    "node-fetch": "^3.3.2",
+    "octokit": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
